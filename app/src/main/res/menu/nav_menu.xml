@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_MealInventory"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="Meal Inventory"/>
+
+    <item
+        android:id="@+id/nav_Statistics"
+        android:icon="@drawable/ic_baseline_statistics"
+        android:title="Statistics"/>
+
+    <item
+        android:id="@+id/nav_TrainingPlan"
+        android:icon="@drawable/ic_baseline_run_circle_24"
+        android:title="TrainingPlan"/>
 
 </menu>
