@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
+    <group android:checkableBehavior="single">
+
     <item
-        android:id="@+id/nav_MealInventory"
+        android:id="@+id/nav_MealManagement"
         android:icon="@drawable/ic_baseline_food_bank_24"
-        android:title="Meal Inventory"/>
+        android:title="Meal Management"
+        app:showAsAction="never"/>
 
     <item
         android:id="@+id/nav_Statistics"
@@ -18,4 +22,5 @@
         android:icon="@drawable/ic_baseline_run_circle_24"
         android:title="TrainingPlan"/>
 
+    </group>
 </menu>
