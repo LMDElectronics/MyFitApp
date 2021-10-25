@@ -1,11 +1,23 @@
 Navigation drawer:
+------------------
   https://www.youtube.com/watch?v=zQh-QGGKPw0
 
 Enlazar opciones del menu lateral a los fragmentos respectivos:
+---------------------------------------------------------------
   https://www.youtube.com/watch?v=AxjKfZr3Crk 
   
 creacion de menu de opciones parte derecha:
+-------------------------------------------
   https://www.youtube.com/watch?v=U_eDQIF3wEg 
   
-falta:
-  añadir iconos
+json serializacion:
+-------------------    
+  https://kotlinlang.org/docs/serialization.html#example-json-serialization  
+
+    
+FALTA:
+------
+  Meal Management:
+  ----------------
+    - Cargar lista de alimentos
+  

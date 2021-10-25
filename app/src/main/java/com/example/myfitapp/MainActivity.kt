@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var toggle : ActionBarDrawerToggle
     lateinit var drawerLayout: DrawerLayout
+    private lateinit var status_text: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,15 +56,38 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
         drawerLayout.closeDrawers()
         setTitle(title)
+    }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.nav_user_menu, menu)
+
+        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(toggle.onOptionsItemSelected(item))
+
+        if (toggle.onOptionsItemSelected(item))
         {
+            //navigation drawer item selected
             return true
         }
+        else
+        {
+            //options menu item selected
+            return when (item.itemId) {
+                R.id.UserSettings -> {
+                    Toast.makeText(this, "User Settings", Toast.LENGTH_LONG).show()
+                    return true
+                }
 
-        return super.onOptionsItemSelected(item)
+                R.id.About -> {
+                    Toast.makeText(this, "About", Toast.LENGTH_LONG).show()
+                    return true
+                }
+
+                else -> return super.onOptionsItemSelected(item)
+            }
+        }
     }
 }

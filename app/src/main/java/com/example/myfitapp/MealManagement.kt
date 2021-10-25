@@ -21,12 +21,34 @@ class MealManagement : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    //class to hold lists of available kind of food
+    class TFoodList {
+        //nullable food lists
+        public var dairylist: List<String>? = null
+        public var fishMeatEggslist: List<String>? = null
+        public var vegetablesList: List<String>? = null
+        public var nutsList: List<String>? = null
+        public var speciesAndSeedsList: List<String>? = null
+
+        //TODO
+        /*public LoadFoodList(String )
+        {
+
+        }*/
+    }
+
+    val myfoodlist = TFoodList()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        //creating foodlist from filesystem file
+        FillFoodList()
+
     }
 
     override fun onCreateView(
@@ -55,5 +77,10 @@ class MealManagement : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    fun FillFoodList()
+    {
+
     }
 }
