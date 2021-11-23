@@ -1,23 +1,27 @@
-Navigation drawer:
-------------------
+#1 Navigation drawer:
+----------------------
   https://www.youtube.com/watch?v=zQh-QGGKPw0
 
-Enlazar opciones del menu lateral a los fragmentos respectivos:
----------------------------------------------------------------
+#2 Enlazar opciones del menu lateral a los fragmentos respectivos:
+------------------------------------------------------------------
   https://www.youtube.com/watch?v=AxjKfZr3Crk 
   
-creacion de menu de opciones parte derecha:
--------------------------------------------
+#3 creacion de menu de opciones parte derecha:
+----------------------------------------------
   https://www.youtube.com/watch?v=U_eDQIF3wEg 
   
-json serializacion:
--------------------    
+#4 json serializacion:
+----------------------
   https://kotlinlang.org/docs/serialization.html#example-json-serialization  
 
-    
+#5 creación de una lista de nombres: (puede servir para lista de alimentos)
+---------------------------------------------------------------------------
+  #5.1 https://www.youtube.com/watch?v=yRYJGzi0dok
+  #5.2 https://www.youtube.com/watch?v=KPvYXXERLjk
+  
 FALTA:
 ------
   Meal Management:
   ----------------
-    - Cargar lista de alimentos
+    - Cargar lista de alimentos 
   
