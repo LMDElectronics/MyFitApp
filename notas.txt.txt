@@ -18,6 +18,8 @@
 ---------------------------------------------------------------------------
   #5.1 https://www.youtube.com/watch?v=yRYJGzi0dok
   #5.2 https://www.youtube.com/watch?v=KPvYXXERLjk
+  #5.3 https://www.youtube.com/watch?v=RHqGiWluAzU
+  #5.4 https://www.raywenderlich.com/155-android-listview-tutorial-with-kotlin
   
 FALTA:
 ------

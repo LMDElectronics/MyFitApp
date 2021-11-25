@@ -22,7 +22,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [MealManagement.newInstance] factory method to
  * create an instance of this fragment.
  */
-class MealManagement : DialogFragment(){
+class MealManagement : Fragment(){
     // TODO: Rename and change types of parameters
     /*private var param1: String? = null
     private var param2: String? = null
@@ -44,20 +44,15 @@ class MealManagement : DialogFragment(){
     ): View? {
 
         val rootView = inflater.inflate(R.layout.fragment_meal_management,container,false)
-        var menuItems = arrayOf<String>("Ajay","Prakesh","Michel","John","Sumit")
+        var menuItems = arrayOf<String>("Dairy","Animal proteïn","Vegetables","Cereals","Nuts","Oils & Butter","Species")
 
         val myListView = rootView!!.findViewById<ListView>(R.id.main_listview) as ListView
 
-        //should use requieredActivity
-        myListView!!.adapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, menuItems)
-
-        this.dialog?.setTitle("Meal Management items")
-
-        //TODO
-        //https://www.youtube.com/watch?v=yRYJGzi0dok
+        //should use requieredContext()
+        myListView.adapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, menuItems)
 
         // Inflate the layout for this fragment
-        return view
+        return rootView
     }
 
     companion object {
